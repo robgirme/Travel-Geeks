@@ -1,8 +1,12 @@
 <!DOCTYPE HTML>
-
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
 <html>
 	<head>
-		<title>Travel Geeks</title>
+		<title>Travel Geek</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -62,7 +66,7 @@
 									<h2>Feugiat consequat</h2>
 									<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.</p>
 									<ul class="actions">
-										<li><a href="Schedule.html" class="button">Learn more</a></li>
+										<li><a href="generic.html" class="button">Learn more</a></li>
 									</ul>
 								</div>
 							</div>
@@ -128,27 +132,25 @@
 					<section id="three" class="wrapper style1 fade-up">
 						<div class="inner">
 							<h2>Create A Profile</h2>
-							<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet imperdiet est velit quis lorem.</p>
+							<p>Post your adventures and see other adventures around the world by creating a profile!</p>
 							<div class="split style1">
 								<section>
-									<form method="post" action="#">
+									<form>
 										<div class="fields">
 											<div class="field half">
-												<label for="name">Name</label>
-												<input type="text" name="name" id="name" />
-											</div>
-											<div class="field half">
-												<label for="email">Email</label>
+												<label for="name">Email</label>
 												<input type="text" name="email" id="email" />
 											</div>
-											<div class="field">
-												<label for="message">Message</label>
-												<textarea name="message" id="message" rows="5"></textarea>
+											<div class="field half">
+												<label for="email">Password</label>
+												<input type="text" name="password" id="password" />
 											</div>
 										</div>
 										<ul class="actions">
-											<li><a href="" class="button submit">Submit</a></li>
+											<button onclick="login()">Log In</button>
+											<button id="create">Sign UP</button>
 										</ul>
+										
 									</form>
 								</section>
 
@@ -156,11 +158,12 @@
 						</div>
 					</section>
 				<!-- Explore Page -->
-					<section id="three" class="wrapper style1 fade-up" style="display:none">
+					<section id="explore" class="wrapper style1 fade-up explore" style="">
 						<div class="inner">
-							<h2>Explore</h2>
-							<p>See where everyone is going!</p>
-							<div class="exlpore" id="userTable"> </div>
+							<div class="exploreWords">
+								<h2>Explore</h2>
+								<p>See where everyone is going!</p>
+							</div>
 						</div>
 					</section>
 
@@ -185,6 +188,8 @@
 			<script src="assets/js/api.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="https://www.gstatic.com/firebasejs/5.8.2/firebase.js"></script>
+			<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
 	</body>
 </html>

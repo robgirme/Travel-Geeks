@@ -3891,11 +3891,21 @@ input, select, textarea {
 
 		}
 
-h1{
+h1, h2{
 	font-family: 'Luckiest Guy', cursive;
 }
 
 p{
 	font-family: 'Fredericka the Great', cursive;
 }
+
+.explore{
+	background: url("../../images/explore.png");
+	height: 400px;
+}
+
+.exploreWords{
+	margin-top: -40px;
+}
+
 
