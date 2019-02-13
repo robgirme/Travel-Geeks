@@ -14,7 +14,7 @@
 
 #booking {
 	font-family: 'PT Sans', sans-serif;
-	background-image: url('/images/pic05.jpg');
+	background-image: url('../../images/pic05.jpg');
 	background-size: cover;
 	background-position: center;
 }
@@ -87,7 +87,6 @@
 
 .booking-form .form-label {
 	display: block;
-	margin-left: 20px;
 	margin-bottom: 5px;
 	font-weight: 400;
 	text-transform: uppercase;
@@ -161,7 +160,6 @@
 	height: 50px;
 	font-size: 14px;
 	border: none;
-	width: 100%;
 	border-radius: 40px;
 	text-transform: uppercase;
 	-webkit-transition: 0.2s all;

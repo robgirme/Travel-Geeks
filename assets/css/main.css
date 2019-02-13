@@ -3249,6 +3249,10 @@ input, select, textarea {
 			background-color: #953d75;
 		}
 
+		.wrapper.style3 {
+				flex-wrap: nowrap wrap wrap-reverse;
+		}
+
 		.wrapper.fullscreen {
 			display: -moz-flex;
 			display: -webkit-flex;
